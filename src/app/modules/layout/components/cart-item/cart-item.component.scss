@@ -1,0 +1,109 @@
+.product {
+  background-color: darken($color: #0d0d0d, $amount: 2.5%);
+  box-shadow: 3px 3px 0 darken($color: #0d0d0d, $amount: 5%);
+
+  padding: 10px;
+
+  display: grid;
+  grid-template-columns: 80px 1fr 30px;
+
+  min-height: 100px;
+
+  transition: 200ms;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: #bf0413;
+  }
+
+  &:hover &__btn-trash {
+    filter: brightness(0%) invert(100%);
+  }
+
+  &:hover &__total {
+    text-shadow: 2px 2px 0px #0d0d0d;
+  }
+
+  &:active {
+    transform: translate(3px, 3px);
+    box-shadow: 3px 3px 0 transparent;
+  }
+
+  &__img {
+    align-self: center;
+
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+
+    border: 1px solid #0d0d0d;
+  }
+
+  &__details {
+    margin: 5px;
+
+    display: flex;
+    flex-flow: row wrap;
+
+    color: white;
+
+    font-weight: bold;
+
+    max-width: 100%;
+
+    justify-content: space-between;
+
+    padding: 5px;
+  }
+
+  &__name {
+    flex-basis: 100%;
+    justify-self: center;
+    color: white;
+    font-size: 0.9rem;
+
+    overflow: hidden;
+  }
+
+  &__costs {
+    flex-basis: 100%;
+    font-family: 'Ruslan Display', cursive;
+    font-size: 1.1rem;
+
+    letter-spacing: 1px;
+
+    display: flex;
+    flex-flow: row wrap;
+
+    align-items: center;
+
+    column-gap: 10px;
+  }
+
+  &__amount {
+    font-weight: bold;
+  }
+
+  &__total {
+    font-size: 2rem;
+
+    text-shadow: 2px 2px 0px #bf0413;
+  }
+
+  &__btn {
+    align-self: center;
+
+    flex-basis: 30px;
+    width: 30px;
+    height: 30px;
+  }
+
+  &__btn-trash {
+    width: 30px;
+    height: 30px;
+    &:hover {
+      scale: (1.1);
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<ng-container *ngIf="product && amount !== null">
+  <div class="product" (click)="navigateToProduct(product.id)">
+    <img class="product__img" [src]="product.img" [alt]="product.name" />
+    <div class="product__details">
+      <h1 class="product__name" [title]="product.name">
+        {{ product.name }}
+      </h1>
+      <p class="product__costs">
+        {{ product.price | price: 'en-US':'USD' }} x {{ amount }} =
+        <app-price
+          class="product__total"
+          [price]="product.price * amount"
+        ></app-price>
+      </p>
+    </div>
+    <button class="product__btn" (click)="remove(product.id)">
+      <img
+        class="product__btn-trash"
+        src="../../../../assets/trash.svg"
+        alt=""
+      />
+    </button>
+  </div>
+</ng-container>

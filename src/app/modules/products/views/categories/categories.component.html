@@ -1,0 +1,19 @@
+<main class="categories">
+  <ng-container *ngIf="products.length; then thenTemplate; else elseTemplate">
+    <app-loading></app-loading>
+  </ng-container>
+  <ng-template #thenTemplate>
+    <app-title
+      class="categories__title"
+      [title]="'The best in ' + categoryName"
+      [subtitle]="'You only can see here'"
+    ></app-title>
+    <app-product-list [products]="this.products"></app-product-list>
+  </ng-template>
+  <ng-template #elseTemplate>
+    <app-not-found
+      class="categories__not-found"
+      [content]="'No products found in ' + '\'' + categoryName + '\''"
+    ></app-not-found>
+  </ng-template>
+</main>

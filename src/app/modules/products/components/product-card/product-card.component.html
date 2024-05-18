@@ -1,0 +1,13 @@
+<ng-container *ngIf="product">
+  <a class="product" [routerLink]="['/product', product.id]">
+    <h1 class="product__title">{{ product.name }}</h1>
+    <img class="product__img" [src]="product.img" [alt]="product.name" />
+    <p class="product__price">
+      <app-price [price]="product.price"></app-price>
+    </p>
+    <p class="product__description">
+      {{ product.description | substring: 130 }}
+    </p>
+    <p class="product__order">SEE</p>
+  </a>
+</ng-container>

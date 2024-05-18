@@ -1,0 +1,27 @@
+<section class="cart" [@grow]>
+  <app-cart-header
+    class="cart__header"
+    [items]="totItems"
+    [price]="totPrice"
+    *ngIf="cart.length"
+  ></app-cart-header>
+
+  <ng-container *ngIf="cart.length; then thenTemplate; else elseTemplate">
+    <app-loading> </app-loading>
+  </ng-container>
+  <ng-template #thenTemplate>
+    <ul class="cart__list">
+      <li class="cart__item" *ngFor="let product of cart">
+        <app-cart-item
+          [product]="product.product"
+          [amount]="product.amount"
+        ></app-cart-item>
+      </li>
+    </ul>
+  </ng-template>
+  <ng-template #elseTemplate>
+    <p class="cart__empty">empty</p>
+  </ng-template>
+
+  <button class="cart__buy" (click)="buy()" *ngIf="cart.length">buy</button>
+</section>

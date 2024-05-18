@@ -1,0 +1,78 @@
+.header {
+  display: grid;
+
+  position: relative;
+
+  grid-template-columns: 60px 1fr 60px;
+  grid-template-rows: 80px;
+
+  @media screen and (min-width: 800px) {
+    padding-top: 10px;
+    grid-template-columns: 80px 1fr 80px;
+    grid-template-rows: 60px 60px;
+  }
+
+  grid-auto-flow: dense;
+
+  justify-items: center;
+  align-items: center;
+
+  &__title {
+    font-size: 1.2rem;
+
+    grid-column: 2 / 3;
+
+    color: white;
+
+    &::first-letter {
+      color: #bf0413;
+      font-size: 1.5em;
+    }
+  }
+
+  &__menu {
+    grid-column: 1 / 2;
+  }
+
+  &__cart {
+    grid-column: 3 / 4;
+    position: relative;
+  }
+
+  &__cart-amount {
+    position: absolute;
+
+    top: 10px;
+    right: 5px;
+
+    text-align: center;
+    font-size: 13px;
+
+    color: white;
+    font-weight: bold;
+    font-family: 'Ruslan Display', cursive;
+
+    &--dots {
+      top: 3px;
+      right: 2px;
+      letter-spacing: 3px;
+      font-size: 20px;
+    }
+  }
+
+  &__cart-dropdown {
+    position: absolute;
+    left: 97.5%;
+    top: 70px;
+    transform: translateX(-100%);
+    z-index: 2;
+    overflow: hidden;
+  }
+
+  &__nav {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+
+    width: 100%;
+  }
+}

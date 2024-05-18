@@ -1,0 +1,40 @@
+.cart {
+  position: relative;
+  z-index: 3;
+
+  &__list {
+    transform: translateX(-100%);
+    top: 55px;
+    left: 40px;
+    position: absolute;
+
+    &::after {
+      content: '';
+      display: block;
+
+      z-index: 4;
+
+      border: 15px solid transparent;
+
+      border-bottom: 15px solid #bf0413;
+
+      position: absolute;
+
+      right: 7.5px;
+      top: -30px;
+    }
+  }
+
+  &__amount {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 16px;
+    left: 21px;
+
+    text-align: right;
+
+    font-family: 'Ruslan Display', cursive;
+
+    color: white;
+  }
+}

@@ -1,0 +1,16 @@
+.categories {
+  width: calc(100% - 20px);
+  margin: 30px auto;
+
+  display: flex;
+  flex-flow: column nowrap;
+
+  &__title {
+    align-self: center;
+    text-align: center;
+  }
+
+  &__not-found {
+    align-self: center;
+  }
+}

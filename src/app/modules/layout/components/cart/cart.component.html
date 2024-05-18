@@ -1,0 +1,13 @@
+<div class="cart">
+  <button class="cart__button" (click)="toggle()">
+    <img src="../../../../assets/cart.svg" alt="cart" />
+    <p class="cart__amount">{{ totItems }}</p>
+  </button>
+  <app-cart-list
+    [totPrice]="totPrice"
+    [totItems]="totItems"
+    class="cart__list"
+    *ngIf="isOpen"
+    [cart]="cart"
+  ></app-cart-list>
+</div>

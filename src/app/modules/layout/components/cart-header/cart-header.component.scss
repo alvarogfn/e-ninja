@@ -1,0 +1,35 @@
+.header {
+  background-color: #bf0413;
+
+  font-family: 'Alef';
+
+  box-shadow: 0px 0 5px darken($color: #0d0d0d, $amount: 20%);
+
+  padding: 5px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  text-shadow: 2px 2px 0 darken($color: #bf0413, $amount: 30%);
+
+  color: white;
+
+  &__size {
+    font-family: 'NINJA', 'Alef', sans-serif;
+    flex-basis: 50%;
+  }
+
+  &__total-number {
+    font-size: 2rem;
+    font-family: 'Ruslan Display', cursive;
+  }
+
+  &__price {
+    flex-basis: 50%;
+    text-align: right;
+    font-size: 1.75rem;
+    width: 40px;
+    height: 100%;
+  }
+}

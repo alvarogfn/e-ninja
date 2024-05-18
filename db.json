@@ -1,0 +1,68 @@
+{
+  "promotional": [
+    {
+      "id": "main",
+      "title": "The best ninja shop",
+      "image": "https://i.imgur.com/8I8QhVL.png",
+      "redirect": "/weapons"
+    }
+  ],
+  "products": [
+    {
+      "category": "weapons",
+      "id": 1,
+      "name": "Japanese Samurai Sword",
+      "price": 16999,
+      "description": "The Fittings of this product is made of (Pure copper material), so it is robust and strong. There is no worry about it might get discolored or oxidized. The knife handles is made of wood, wrapped by a non-slippery, sweat-absorbing cotton wires. The scabbard is wooden too, bearing patterns which make the product more beautiful. ",
+      "img": "https://m.media-amazon.com/images/I/71HoXEBSNgL._AC_SL1500_.jpg"
+    },
+    {
+      "id": 2,
+      "category": "weapons",
+      "name": "Japanese Sword Katana High Carbon Steel with Clay Tempered Sharp",
+      "price": 153631,
+      "description": "100% pure handmade, This need is about 7~30 days or so to complete made. Following is a sample hand-measured dimensions (approximately), the Measurements There may be some errors. Moreover, color may not appear exactly as in real life due to variation between computer monitor resolution and lights. As It is handmade products, so maybe the item you receive is a little different from the photo of order listed on Amazon. (the slightly error). please prevail in kind.  This is just a sword, there is no sword stand, the sword stand is just for the sake of shooting.( The wooden stand in item pictures is NOT included )",
+      "img": "https://m.media-amazon.com/images/I/613LY8FhYwL._AC_SL1024_.jpg"
+    },
+    {
+      "id": 3,
+      "category": "weapons",
+      "name": "Carbon Steel Handmade Sword",
+      "price": 7999,
+      "description": "Handmade,Hand Sharpened to Create a Perfect Blade.Extremely Sharp Hand Honed Layered Blade, Traditional Hand Forge, High Carbon Steel Handmade Sword ",
+      "img": "https://m.media-amazon.com/images/I/41AuJSX6+zL._AC_SL1000_.jpg"
+    },
+    {
+      "id": 4,
+      "category": "weapons",
+      "name": "Martial Arts Training Broad Sword",
+      "price": 2489,
+      "description": "The BladesUSA Martial Arts Training Broad Sword in black (model 1606PP) features polypropylene construction, with a 34-1/2-inch length. Constructed from lead and phthalate free material, this heavy grade polypropylene of this training weapon closely replicates the weight and feel of the real thing. This broad sword features a black polypropylene blade with a pointed tip and has an 8-inch curved handle. This training sword is virtually indestructible and offers a safe way to learn the craft of weapons training.",
+      "img": "https://m.media-amazon.com/images/I/61sip9o8+zL._AC_SL1500_.jpg"
+    },
+    {
+      "id": 5,
+      "category": "weapons",
+      "name": "Demon Slayer Sword Real Metal, Handmade Katana Anime ",
+      "price": 11999,
+      "description": "Demon Slayer Sword Real Metal, Handmade Katana Anime. Demon Slayer Sword Real Metal, Handmade Katana Anime ",
+      "img": "https://m.media-amazon.com/images/I/61x-za5BwnL._AC_SL1500_.jpg"
+    },
+    {
+      "id": 6,
+      "category": "weapons",
+      "name": "Ninja Kunai",
+      "price": 1699,
+      "description": "Small Red Kunai x3,Small White Kunai x3,Small White Leader Kunai x2,Shuriken x2. Kunai and Shuriken are both high-impact plastic. High temperature resistance, strong hardness, safe and harmless. The handle is wrapped with canvas for comfortable feel. ",
+      "img": "https://m.media-amazon.com/images/I/51gwA1MsWeS._AC_SL1200_.jpg"
+    },
+    {
+      "id": 7,
+      "category": "weapons",
+      "name": "Nunchaku",
+      "price": 2500,
+      "description": "Nunchaku with sticks made of foam and sponge. The sponge core sticks are surrounded by soft foam. They are connected by a strong welding stainless steel chain. The sponge material stick can ensure safe training and prevent you from being injured during the exercise. Easy to control to provide the best experience.",
+      "img": "https://m.media-amazon.com/images/I/71xAlZCaVuL._AC_SL1500_.jpg"
+    }
+  ]
+}

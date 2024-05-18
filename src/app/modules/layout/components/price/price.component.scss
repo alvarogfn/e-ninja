@@ -1,0 +1,23 @@
+.price {
+  display: inline-block;
+
+  text-align: inherit;
+
+  width: 100%;
+  height: 100%;
+
+  font-size: inherit;
+
+  text-shadow: inherit;
+
+  color: inherit;
+
+  font-family: 'Ruslan Display', cursive;
+
+  padding: inherit;
+  margin: inherit;
+
+  &::first-letter {
+    font-size: 0.5em;
+  }
+}

@@ -1,0 +1,17 @@
+.error {
+  margin: 10px auto;
+
+  width: calc(100vw - 30px);
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  text-align: center;
+
+  &__img {
+    max-width: 100px;
+    max-height: 100px;
+    filter: grayscale(100%) opacity(50%);
+  }
+}

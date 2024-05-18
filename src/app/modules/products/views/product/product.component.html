@@ -1,0 +1,25 @@
+<ng-container *ngIf="product; else elseTemplate">
+  <section class="product">
+    <h1 class="product__name">{{ product.name }}</h1>
+    <img class="product__img" [src]="product.img" />
+    <p class="product__description">{{ product.description }}</p>
+    <app-price class="product__price" [price]="product.price"></app-price>
+    <select class="product__amount">
+      <option value="1" selected>1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+    </select>
+    <ng-container *ngIf="loading; else elseTemplate">
+      <button class="product__buy product__buy--disabled">Adicionado!</button>
+    </ng-container>
+    <ng-template #elseTemplate>
+      <button class="product__buy" (click)="onAddToCart()">Cart</button>
+    </ng-template>
+  </section>
+</ng-container>
+<ng-template #elseTemplate>
+  <app-loading class="loading"></app-loading>
+</ng-template>

@@ -1,0 +1,10 @@
+<header class="header">
+  <h1 class="header__title"><a [routerLink]="['']">E-NINJA</a></h1>
+  <button class="header__menu" *ngIf="isMobile; else nav">
+    <img src="../../../assets/menu.svg" alt="Menu" />
+  </button>
+  <app-cart class="header__cart"></app-cart>
+  <ng-template #nav>
+    <app-nav class="header__nav"></app-nav>
+  </ng-template>
+</header>
